@@ -26,3 +26,19 @@
 	margin-right:2.5px;
 	float:left;
 }
+
+#leftChevron, #rightChevron {
+	position:relative;
+	display:inline-block;
+	top: 60px;
+	font-size:25px;
+	cursor: pointer;
+}
+
+#leftChevron {
+	float: left;
+}
+
+#rightChevron {
+	float: right;
+}

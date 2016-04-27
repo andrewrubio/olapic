@@ -22,3 +22,9 @@ In the index file I added a simple structure of the carousel and the photoStrip.
 I appended each image from the API onto this strip div by div (inline-block so they appear on one line) so that I can manipulate them individually later.
 
 Then by using overflow:hidden (css) on the carousel to hide the remainder of the images, I added chevrons (from Bootstrap glyphicons) on either side of the 6 images.
+
+## Scrolling
+
+Through jQuery, when clicking on the right chevron, I basically remove the first image and add it onto the end (this way the images essentially move left as the first image disappears).
+
+For the left chevron, I prepend the last image onto the beginning. The strip automatically moves to the right as the first image is the beginning of the strip.

@@ -18,6 +18,29 @@ $(document).ready(function() {
 		});
 
 		var photos = $('div', $('.photoStrip'));
+
+		// width of viewable window	- all visible thumbnails
+		var windowWidth = 155 * 6;
+		var offset = -155; // value to shift carousel by when scrolling
+
+		$('#right').on('click', function () {
+				// refresh photos
+				photos = $('div', $('.photoStrip'));
+
+				// add first image onto end of photo strip
+				$('.photoStrip div:last').after($(photos[0]));
+			});
+		});
+
+		$('#left').on('click', function () {
+			// refresh photos
+			photos = $('div', $('.photoStrip'));
+
+			// end image prepends to beginning of set
+			var photonum = photos.length-1;
+			$('.photoStrip').prepend($(photos[photonum]));
+		});
+
 	})
 
 });
