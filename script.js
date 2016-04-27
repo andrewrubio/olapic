@@ -47,6 +47,29 @@ $(document).ready(function() {
 			$('.photoStrip').animate({'left': 0}, 100); // animate it to right (back to 0), so prepended image slides in
 		});
 
+		// taken from Magnific Popup plugin
+		$('.photoStrip').magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			closeOnContentClick: false,
+			closeBtnInside: false,
+			mainClass: 'mfp-with-zoom mfp-img-mobile',
+			image: {
+				verticalFit: true // removed title on image as URL was coming up with undefined (API issue?)
+			},
+			gallery: {
+				enabled: true
+			},
+			zoom: {
+				enabled: true,
+			duration: 300, // don't forget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
+
 	})
 
 });

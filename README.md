@@ -3,7 +3,7 @@
 ## JSON
 First I tested the API and ensured that the key worked with authentication.
 
-I used the chrome tool 'Postman' to quickly test the REST API request.
+I used the chrome tool [Postman](https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiG8K_8gK_MAhWHOxQKHWrSCN4QFggcMAA&url=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fpostman%2Ffhbjgbiflinjbdggehcddcbncdddomop%3Fhl%3Den&usg=AFQjCNE_Yq59TT1ZExzJ68FTldg4ho_lGw&sig2=67wBPYALQ7c5sVvP5kjcZw&bvm=bv.120551593,d.d24) to quickly test the REST API request.
 
 Using the 'Authentication' link in the Olapic API documentation, filling in api_key, I made the GET request on Postman.
 
@@ -38,3 +38,7 @@ For the right chevron, I made the whole process "animate" moving left (by one th
 For the left chevron, I moved the whole strip left (by one thumbnail) and then animated it back right into the viewing window.
 
 Then I added more jQuery to decrease opacity when hovering over an image.
+
+## Image Lightbox Modal - Magnific
+
+For the popup modal, I used the [Magnific](http://dimsemenov.com/plugins/magnific-popup/) jQuery lightbox plugin and used the zoom effect (which I have used before). To make this work I made the image a hyperlink, where the endpoint ref is the "normal" image from the API.
