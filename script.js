@@ -29,7 +29,6 @@ $(document).ready(function() {
 
 				// add first image onto end of photo strip
 				$('.photoStrip div:last').after($(photos[0]));
-			});
 		});
 
 		$('#left').on('click', function () {
