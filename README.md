@@ -28,3 +28,13 @@ Then by using overflow:hidden (css) on the carousel to hide the remainder of the
 Through jQuery, when clicking on the right chevron, I basically remove the first image and add it onto the end (this way the images essentially move left as the first image disappears).
 
 For the left chevron, I prepend the last image onto the beginning. The strip automatically moves to the right as the first image is the beginning of the strip.
+
+## Animated Scrolling
+
+By adding more jQuery I made the carousel animate on scroll.
+
+For the right chevron, I made the whole process "animate" moving left (by one thumbnail), and then snapping the strip back to its original position.
+
+For the left chevron, I moved the whole strip left (by one thumbnail) and then animated it back right into the viewing window.
+
+Then I added more jQuery to decrease opacity when hovering over an image.

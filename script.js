@@ -24,11 +24,15 @@ $(document).ready(function() {
 		var offset = -155; // value to shift carousel by when scrolling
 
 		$('#right').on('click', function () {
+			$('.photoStrip').animate({'left': offset}, 100, function () { // while sliding left by one thumbnail:
 				// refresh photos
 				photos = $('div', $('.photoStrip'));
 
 				// add first image onto end of photo strip
 				$('.photoStrip div:last').after($(photos[0]));
+
+				$('.photoStrip').css('left', 0); // snap back to position
+			});
 		});
 
 		$('#left').on('click', function () {
@@ -38,6 +42,9 @@ $(document).ready(function() {
 			// end image prepends to beginning of set
 			var photonum = photos.length-1;
 			$('.photoStrip').prepend($(photos[photonum]));
+
+			$('.photoStrip').css('left', offset); // snap the photoStrip left by one, so it has the prepended image
+			$('.photoStrip').animate({'left': 0}, 100); // animate it to right (back to 0), so prepended image slides in
 		});
 
 	})
