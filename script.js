@@ -47,6 +47,20 @@ $(document).ready(function() {
 			$('.photoStrip').animate({'left': 0}, 100); // animate it to right (back to 0), so prepended image slides in
 		});
 
+		$('.photo, .olapic-logo').mouseenter(function() {
+			$(this).animate({
+				'opacity': 0.8,
+			}, 100);
+			$(this).css('box-shadow', '4px 4px 3px #888888');
+		});
+
+		$('.photo, .olapic-logo').mouseleave(function() {
+			$(this).animate({
+				'opacity': 1
+			}, 20);
+			$(this).css('box-shadow', 'none');
+		});
+
 		// taken from Magnific Popup plugin
 		$('.photoStrip').magnificPopup({
 			delegate: 'a',

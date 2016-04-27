@@ -21,7 +21,7 @@ In the index file I added a simple structure of the carousel and the photoStrip.
 
 I appended each image from the API onto this strip div by div (inline-block so they appear on one line) so that I can manipulate them individually later.
 
-Then by using overflow:hidden (css) on the carousel to hide the remainder of the images, I added chevrons (from Bootstrap glyphicons) on either side of the 6 images.
+Then by using overflow:hidden (css) on the carousel to hide the remainder of the images, I added chevrons (from [Bootstrap glyphicons](http://getbootstrap.com/components/)) on either side of the 6 images.
 
 ## Scrolling
 
